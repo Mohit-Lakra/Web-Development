@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning CSS</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Text Basics in HTML</h1>
+
+  <h2>Headings</h2>
+  <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, with
+    <code>&lt;h1&gt;</code> being the most important and <code>&lt;h6&gt;</code> being the least important.
+  </p>
+  <h3>Example of Headings</h3>
+  <h1>This is a Heading 1</h1>
+  <h2>This is a Heading 2</h2>
+  <h3>This is a Heading 3</h3>
+  <h4>This is a Heading 4</h4>
+  <h5>This is a Heading 5</h5>
+  <h6>This is a Heading 6</h6>
+
+  <h2>Paragraphs</h2>
+  <p>A paragraph in HTML is defined using the <code>&lt;p&gt;</code> tag. It is used to group sentences and sections of
+    text together.</p>
+
+  <h2>Break line and horizontal line</h2>
+  <p>The <code>&lt;br&gt;</code> tag is used to insert a line break, while the <code>&lt;hr&gt;</code> tag is used to
+    insert a horizontal line.</p>
+
+
+  <h1>List Types</h1>
+  <h2>Unordered List</h2>
+  <p>An unordered list is a list of items in which the order does not matter. It is defined using the
+    <code>&lt;ul&gt;</code> tag, and each item in the list is defined using the <code>&lt;li&gt;</code> tag.
+  </p>
+  <h3>Example of Unordered List</h3>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <h2>Ordered List</h2>
+  <p>An ordered list is a list of items in which the order does matter. It
+    is defined using the <code>&lt;ol&gt;</code> tag, and each item in the list is defined using the
+    <code>&lt;li&gt;</code> tag.
+  </p>
+  <h3>Example of Ordered List</h3>
+  <ol>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+  </ol>
+
+  <h1>Links and Images</h1>
+  <h2>Links</h2>
+  <p>A link in HTML is defined using the <code>&lt;a&gt;</code> tag, which stands for "anchor". The <code>href</code>
+    attribute is used to specify the URL of the page the link goes to.</p>
+  <h3>Example of a Link</h3>
+  <a href="https://www.example.com">Visit Example.com</a>
+  <h2>Images</h2>
+  <p>An image in HTML is defined using the <code>&lt;img&gt;</code> tag. The <code>src</code> attribute is used to
+    specify the path to the image, and the <code>alt</code> attribute is used to provide alternative text for the image.
+  </p>
+  <h3>Example of an Image</h3>
+  <img src="html5.png" alt="HTML5 Logo" width="200">
+
+  <h1>Semantics</h1>
+  <p>Semantic HTML refers to the use of HTML tags that convey the meaning of the content they contain. This helps search
+    engines and assistive technologies understand the structure and content of a webpage.</p>
+  <h2>Semantic Tags</h2>
+  <ul>
+    <li><code>&lt;header&gt;</code>: Represents the header of a document or a section.</li>
+    <li><code>&lt;nav&gt;</code>: Represents a section of a page that links to other pages or to parts within the page.
+    </li>
+    <li><code>&lt;main&gt;</code>: Represents the main content of a document.</li>
+    <li><code>&lt;article&gt;</code>: Represents a self-contained composition in a document, such as a blog post or news
+      article.</li>
+    <li><code>&lt;section&gt;</code>: Represents a generic section of a document, typically with a heading.</li>
+    <li><code>&lt;footer&gt;</code>: Represents the footer of a document or a section.</li>
+  </ul>
+
+  <h3>Example of Semantic Tags</h3>
+  <header>
+    <h1>My Website</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <article>
+      <h2>Welcome to My Website</h2>
+      <p>This is a sample article on my website.</p>
+    </article>
+    <section>
+      <h2>About Me</h2>
+      <p>This section contains information about me.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+  </footer>
+
+  <h1>Tables in HTML</h1>
+  <p>A table in HTML is defined using the <code>&lt;table&gt;</code> tag. The <code>&lt;tr&gt;</code> tag defines a
+    table row, the <code>&lt;th&gt;</code> tag defines a table header, and the <code>&lt;td&gt;</code> tag defines a
+    table cell.</p>
+  <h3>Example of a Table</h3>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>30</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>25</td>
+      <td>Los Angeles</td>
+    </tr>
+    <tr>
+      <td>Emily Johnson</td>
+      <td>35</td>
+      <td>Chicago</td>
+    </tr>
+  </table>
+
+  <p> Row span and Col span</p>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td rowspan="2">John Doe</td>
+      <td>30</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Boston</td>
+    </tr>
+    <tr>
+      <td colspan="2">Jane Smith</td>
+      <td>Los Angeles</td>
+    </tr>
+    <tr>
+      <td>Emily Johnson</td>
+      <td>35</td>
+      <td>Chicago</td>
+    </tr>
+  </table>
+
+  <h1>Forms in HTML</h1>
+  <p>A form in HTML is defined using the <code>&lt;form&gt;</code> tag. It is used to collect user input and submit it
+    to a server for processing. The <code>action</code> attribute specifies the URL of the server-side script that will
+    handle the form submission, and the <code>method</code> attribute specifies the HTTP method to use when submitting
+    the form (usually "GET" or "POST").</p>
+  <h3>Example of a Form</h3>
+  <form action="/submit" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+
+</html>
