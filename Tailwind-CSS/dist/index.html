@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tailwind css</title>
+  <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="bg-black grid place-content-center h-screen">
+  <!-- Now lets create a website using tailwind css -->
+  <div class="min-h-screen bg-slate-950 text-slate-100">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <h1 class="text-xl font-bold bg-gradient-to-r from-violet-500 to-cyan-400 bg-clip-text text-transparent">
+            MyBrand
+          </h1>
+
+          <ul class="hidden md:flex gap-8">
+            <li><a href="#" class="hover:text-cyan-400 transition">Home</a></li>
+            <li><a href="#" class="hover:text-cyan-400 transition">About</a></li>
+            <li><a href="#" class="hover:text-cyan-400 transition">Services</a></li>
+            <li><a href="#" class="hover:text-cyan-400 transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="py-32 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+
+        <span class="px-4 py-2 rounded-full bg-violet-500/20 text-violet-300 text-sm">
+          Modern Web Solutions
+        </span>
+
+        <h1 class="mt-8 text-5xl md:text-7xl font-extrabold leading-tight">
+          Build Beautiful
+          <span class="bg-gradient-to-r from-violet-500 to-cyan-400 bg-clip-text text-transparent">
+            Digital Experiences
+          </span>
+        </h1>
+
+        <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto">
+          Fast, responsive and modern websites designed to help your business grow.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            class="px-8 py-4 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 hover:scale-105 transition">
+            Get Started
+          </button>
+
+          <button class="px-8 py-4 rounded-xl border border-slate-700 hover:border-cyan-400 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+      <h2 class="text-4xl font-bold text-center mb-14">
+        Our Services
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div
+          class="group bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:border-violet-500 transition hover:-translate-y-2">
+          <div class="w-14 h-14 rounded-2xl bg-violet-500/20 flex items-center justify-center text-2xl">
+            🚀
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+            Web Development
+          </h3>
+
+          <p class="mt-4 text-slate-400">
+            High-performance websites built with modern technologies.
+          </p>
+
+          <button class="mt-6 text-cyan-400 font-medium">
+            Learn More →
+          </button>
+        </div>
+
+        <div
+          class="group bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:border-violet-500 transition hover:-translate-y-2">
+          <div class="w-14 h-14 rounded-2xl bg-cyan-500/20 flex items-center justify-center text-2xl">
+            💡
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+            UI/UX Design
+          </h3>
+
+          <p class="mt-4 text-slate-400">
+            Beautiful interfaces designed for better user engagement.
+          </p>
+
+          <button class="mt-6 text-cyan-400 font-medium">
+            Learn More →
+          </button>
+        </div>
+
+        <div
+          class="group bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:border-violet-500 transition hover:-translate-y-2">
+          <div class="w-14 h-14 rounded-2xl bg-indigo-500/20 flex items-center justify-center text-2xl">
+            📈
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+            Growth Strategy
+          </h3>
+
+          <p class="mt-4 text-slate-400">
+            Data-driven solutions to scale your business faster.
+          </p>
+
+          <button class="mt-6 text-cyan-400 font-medium">
+            Learn More →
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="max-w-4xl mx-auto px-6 py-20">
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12">
+
+        <h2 class="text-4xl font-bold mb-8 text-center">
+          Contact Us
+        </h2>
+
+        <form class="space-y-6">
+
+          <input type="text" placeholder="Your Name"
+            class="w-full bg-slate-800 border border-slate-700 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-violet-500">
+
+          <input type="email" placeholder="Email Address"
+            class="w-full bg-slate-800 border border-slate-700 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-violet-500">
+
+          <textarea rows="5" placeholder="Your Message"
+            class="w-full bg-slate-800 border border-slate-700 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-violet-500"></textarea>
+
+          <button
+            class="w-full py-4 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 hover:scale-[1.02] transition">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500">
+      © 2026 MyBrand. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
