@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  background-color: lightgray;
+  border: 2px solid green;
+  flex-direction: column;
+}
+
+.Row1 {
+  display: flex;
+  background-color: lightblue;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin: 5px;
+  border: 5px solid blue;
+  width: 99%;
+}
+
+.Row2 {
+  display: flex;
+  background-color: lightblue;
+  align-items: center;
+  justify-content: space-around;
+  flex: 3;
+  margin: 5px;
+  border: 5px solid blue;
+  width: 99%;
+}
+
+.Row3 {
+  display: flex;
+  background-color: lightblue;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin: 5px;
+  border: 5px solid blue;
+  width: 99%;
+}
+
+.Box1 {
+  background-color: lightsalmon;
+  align-items: center;
+  justify-content: space-around;
+  border: 5px solid red;
+  flex: 1;
+  margin: 5px;
+  height: 90%;
+}
+
+.Box2 {
+  background-color: lightsalmon;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin: 5px;
+  border: 5px solid red;
+  display: flex;
+  height: 90%;
+}
+
+.Box3 {
+  background-color: lightsalmon;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin: 5px;
+  border: 5px solid red;
+  height: 90%;
+}
+
+.Box4 {
+  background-color: lightsalmon;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin: 5px;
+  border: 5px solid red;
+  height: 90%;
+}
+
+.content1 {
+  background-color: lightgreen;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin: 5px;
+  border: 5px solid green;
+  height: 90%;
+  width: 90%;
+}
+
+.content2 {
+  background-color: lightgreen;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin: 5px;
+  border: 5px solid green;
+  height: 90%;
+  margin: 5px;
+  width: 90%;
+}
+
+#vertical {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
